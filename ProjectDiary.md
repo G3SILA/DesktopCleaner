@@ -8,7 +8,7 @@
 
 ### source 
 ***Markdown Guide for today***
-[markdown guide](https://markdown.com.cn/basic-syntax/emphasis.html "you'll see me when you mouse float here - i Know it's cool")
+[markdown guide](https://markdown.com.cn/basic-syntax/emphasis.html "you'll see me when your mouse float here - i Know it's cool")
 
 ### yes I just learned headlines
 > adding an arrow makes the sentence seem wisdom
