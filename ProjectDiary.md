@@ -2,7 +2,7 @@
 ## May 27, 2025
 ### checklist
 - [x] download git desktop    
-- [ ] learning markdown (progressing!)  
+- [x] learning markdown (progressing!)  
 - [ ] decide the specifics of project (or what to do??)  
 - [ ] Maybe learning **PYTHON**!!  (script automation I see)
 
@@ -19,6 +19,50 @@
 *** 
 
 I think using `code` can be fun. 
+
+
+
+## May 31, 2025
+- [ ] start learning python 
+- [x] outline of my project - what could it do? 
+
+### source of the day
+[python tutorial](https://www.youtube.com/watch?v=K5KVEU3aaeQ "learning in 2 hrs")
+
+### brainstorm 
+- clean files on desktop (once per run)
+    - by file type and create folder
+        - .jpg / .png
+        - .docx
+        - .pptx
+        - .pdf
+        - .zip
+        - other
+
+
+    - name folder for designated file type: create if DNE
+    - by file name?
+        - IMG_
+        - Screenshot
+        - ...
+
+- automatic clean up from downloading (running at the backend)
+
+- safety / Control
+    - Dry-run: Show what would be moved/deleted without actually doing it
+    - undo 
+    - summary report: xxx files are moved into ... 
+
+- GUI
+    - clean
+        - preview
+    - setting
+        - custom file names / target file
+    - history
+        - recent 5? 
+
+
+
 
 
 
