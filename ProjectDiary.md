@@ -69,6 +69,26 @@ And what if I don't end with whitespace??
 
 
 
+## Jun 1, 2025
+- [x] start Python tutorial
+
+### Notes for today
+- interpreter 
+    - terminal 
+    - python hello.py
+
+- extensions
+    - lints (help find errors)
+
+- PEP (python enhancement proposal)
+    - how python evolve
+    - pep 8 (style guide)
+
+- different python implementation
+    - Cpython
+    - Jython (can import `Java code` into python!)
+    - pypy 
+
 
 
 
