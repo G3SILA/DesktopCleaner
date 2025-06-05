@@ -85,12 +85,22 @@ And what if I don't end with whitespace??
     - pep 8 (style guide)
 
 - different python implementation
-    - Cpython
-    - Jython (can import `Java code` into python!)
+    - Cpython   -> python bytecode
+    - Jython (can import `Java code` into python!)  -> java bytecode
     - pypy 
 
 
+## Jun 4, 2025
+- [x] continue on Python   
 
+> This language actually smoothens my brain. I could not differentiate types nor appropritely 
+> thinking about managing memory anymore.    
+
+### Notes for today
+- string as array 
+- string as object 
+- math as object! 
+- I/O
 
  
     
