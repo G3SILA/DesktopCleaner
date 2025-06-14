@@ -1,12 +1,10 @@
 import config
-import directory
 import distributer
 
-directory.ensure_home()
-
+config.read_path()
 distributer.organize_desktop()
 
-
+input("------Done------\nPress Enter to exit...")
 
 
 
