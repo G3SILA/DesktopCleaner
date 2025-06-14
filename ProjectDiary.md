@@ -104,7 +104,7 @@ And what if I don't end with whitespace??
 
 
 ## Jun 10, 2025
-- [x] continue on Python 
+- [x] continue on Python (finish!) 
 
 ### Notes for today
 **Indentation** matters in Python! 
@@ -184,3 +184,19 @@ def createlist(*numbers):
 
 createlist(1,2,3,4)        #(1, 2, 3, 4)
 ```
+
+
+## Jun 14, 2025
+- [x] learning python modules 
+- [x] start implementing    
+    goal for today: 
+    - divide files into different folders
+
+**Modules** 
+- os
+- pathlib
+
+FUN! 
+First version of DesktopCleaner.exe released! 
+Enter the intend path and clean the files for you! 
+
