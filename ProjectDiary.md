@@ -205,7 +205,7 @@ Enter the intend path and clean the files for you!
 
 ## Jun 18, 2025
 - [x] re-organize modules and some functions, more reusability and maintainability
-- [x] fix: terminal now remain even when error occurs
+- [x] fix: terminal now remain even when error occurs - don't crash! 
 - [x] new feature: menu
 - [x] new feature: log info, record and print
 - [ ] next step: restore implement from log info 
