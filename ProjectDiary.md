@@ -186,6 +186,9 @@ createlist(1,2,3,4)        #(1, 2, 3, 4)
 ```
 
 
+
+# Implementation 
+
 ## Jun 14, 2025
 - [x] learning python modules 
 - [x] start implementing    
@@ -200,3 +203,9 @@ FUN!
 First version of DesktopCleaner.exe released! 
 Enter the intend path and clean the files for you! 
 
+## Jun 18, 2025
+- [x] re-organize modules and some functions, more reusability and maintainability
+- [x] fix: terminal now remain even when error occurs
+- [x] new feature: menu
+- [x] new feature: log info, record and print
+- [ ] next step: restore implement from log info 
