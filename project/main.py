@@ -1,15 +1,18 @@
 import distributer
 import utils
+import log
+
 
 # command for quit
 # quit is always the last option
-QUIT = '3'
+QUIT = '4'
 
 def menu():
     while True:
         print("\n=== Desktop Cleaner Menu ===")
         print("1. Run Cleaner")
         print("2. Restore Last Cleanup")
+        print("3. Check Last Log Info")
         print(f"{QUIT}. Quit")
 
         choice = input(f"Enter (1-{QUIT}): ").strip()
@@ -20,6 +23,12 @@ def menu():
         elif choice == '2':
             print("Restoring last cleanup...")
             ####
+        elif choice == '3':
+            if not utils.read_path():
+                continue
+            log_file = log.get_latest_log(utils.DESKTOP_PATH)
+            if (log_file): 
+                log.print_log(log_file)
         elif choice == QUIT:
             break
         else:
