@@ -217,3 +217,11 @@ Enter the intend path and clean the files for you!
 
 Should I delete the log file once restored? Or keep it...   
 
+## Jun 22, 2025
+- Change the name of log file once restored
+    - Allow restore unlimited times 
+    - Can restore back to the start! 
+- Add description to the skip nature in menu 
+- Next: 
+    - optimize menu logic: just read the path once
+    - add an option to change path 
