@@ -209,3 +209,11 @@ Enter the intend path and clean the files for you!
 - [x] new feature: menu
 - [x] new feature: log info, record and print
 - [ ] next step: restore implement from log info 
+
+
+## Jun 21, 2025
+- [x] restore latest cleanup
+- [ ] next: customize files with .json files
+
+Should I delete the log file once restored? Or keep it...   
+
