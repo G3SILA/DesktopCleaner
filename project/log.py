@@ -2,7 +2,7 @@ import utils
 from pathlib import Path
 from datetime import datetime
 
-# return the current file_path for next log  
+# return the current file_path for next log
 def get_log_path(parent_path : Path) -> Path: 
     log_folder = utils.ensure_folder(parent_path, "log_info")
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -30,7 +30,8 @@ def print_log(log_path: Path):
     except Exception as e:
         print(f"Failed to read log: {e}")
 
-# return the path of the lastest log file 
+# return the path of the lastest log file
+# Note: this would skip any (restored) log files
 def get_latest_log(work_folder: Path) -> Path:
     log_path = work_folder / "log_info"                       
     logs = sorted(log_path.glob("*.log"), reverse=True)   #descending order
@@ -45,6 +46,7 @@ def restore_latest(log_file: Path):
     if not log_file.exists():
         print(f"Log file not found: {log_file}")
         return
+    # restore
     with open(log_file, 'r', encoding='utf-8') as log:
         for line in log: 
             ori_path_str, new_path_str = map(str.strip, line.split("->"))
@@ -56,5 +58,11 @@ def restore_latest(log_file: Path):
             else:
                 print(f"File not found: {new_path.name}\n"
                       f"OR original folder doesn't exist: {ori_path}")
+    # change log file
+    newlog_name = f"(restored)_at_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}_original_{log_file.name}"
+    path = log_file.parent / newlog_name
+    log_file.rename(path)
+
+
             
         

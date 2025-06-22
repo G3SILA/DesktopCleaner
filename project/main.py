@@ -12,7 +12,7 @@ def menu():
         print("\n=== Desktop Cleaner Menu ===")
         print("1. Run Cleaner")
         print("2. Restore Last Cleanup")
-        print("3. Check Last Log Info")
+        print("3. Check Last Log Info (We skip restored log files)")
         print(f"{QUIT}. Quit")
 
         choice = input(f"Enter (1-{QUIT}): ").strip()
