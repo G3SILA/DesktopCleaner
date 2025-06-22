@@ -21,8 +21,8 @@ def menu():
                 continue
             distributer.organize_desktop()
         elif choice == '2':
-            print("Restoring last cleanup...")
-            ####
+            log_file = log.get_latest_log(utils.DESKTOP_PATH)
+            log.restore_latest(log_file)
         elif choice == '3':
             if not utils.read_path():
                 continue

@@ -13,7 +13,7 @@ def write_log(moved_files: list[tuple[str, str]], log_file: Path):
     try:
         with open(log_file, 'w', encoding='utf-8') as logfile:
             for new_path, old_path in moved_files:
-                logfile.write(f"{new_path} -> {old_path}\n")
+                logfile.write(f"{old_path} -> {new_path}\n")
         print(f"New log saved as {log_file.name}")
     except Exception as e:
         print(f"Failed to write log file: {e}")
@@ -40,3 +40,21 @@ def get_latest_log(work_folder: Path) -> Path:
     return logs[0]
 
 
+# restore the most recent clean-up 
+def restore_latest(log_file: Path):
+    if not log_file.exists():
+        print(f"Log file not found: {log_file}")
+        return
+    with open(log_file, 'r', encoding='utf-8') as log:
+        for line in log: 
+            ori_path_str, new_path_str = map(str.strip, line.split("->"))
+            ori_path = Path(ori_path_str)
+            new_path = Path(new_path_str)
+            if new_path.exists() and ori_path.parent.exists():
+                new_path.rename(ori_path)
+                print(f"Restored: {new_path.name} to {ori_path}")
+            else:
+                print(f"File not found: {new_path.name}\n"
+                      f"OR original folder doesn't exist: {ori_path}")
+            
+        
